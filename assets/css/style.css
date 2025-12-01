@@ -1,0 +1,159 @@
+/* =============================
+   GLOBAL STYLING
+============================= */
+
+/* Gunakan font default agar konsisten */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Menghindari konten tertutup navbar fixed */
+.mt-navbar {
+  margin-top: 90px;
+}
+
+/* =============================
+   NAVBAR
+============================= */
+header {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Logo agar tidak stretch */
+header img {
+  height: 50px;
+  width: auto;
+}
+
+/* Navbar link hover */
+.nav-link {
+  transition: 0.2s;
+}
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero-overlay {
+  background: rgba(0,0,0,0.55) !important;
+}
+
+/* =============================
+   CONTENT WRAPPER
+============================= */
+
+.content-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Garis bawah judul */
+.content-title {
+  border-left: 4px solid #1e40af;
+  padding-left: 12px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+/* =============================
+   FORM STYLING
+============================= */
+
+.form-input {
+  border: 1px solid #d1d5db;
+  padding: 10px 14px;
+  border-radius: 6px;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.form-input:focus {
+  border-color: #1e40af;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(30, 64, 175, 0.2);
+}
+
+.form-label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Tombol utama */
+.btn-primary {
+  background: #1e40af;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: 0.2s;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background: #1e3a8a;
+}
+
+/* =============================
+   FAQ PAGE
+============================= */
+
+.faq-item {
+  background: white;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-bottom: 14px;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.faq-item:hover {
+  background: #f8fafc;
+}
+
+.faq-question {
+  font-weight: 700;
+  font-size: 17px;
+  color: #1e3a8a;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  color: #444;
+  line-height: 1.6;
+  padding-left: 5px;
+}
+
+/* FAQ opened */
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* =============================
+   FOOTER
+============================= */
+
+footer {
+  line-height: 1.5;
+}
+
+footer p {
+  margin-bottom: 4px;
+}
+
+/* =============================
+   MOBILE FIXES
+============================= */
+
+@media (max-width: 768px) {
+  header img {
+    height: 45px;
+  }
+
+  .content-box {
+    padding: 20px;
+  }
+}
